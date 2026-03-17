@@ -1,0 +1,77 @@
+body{
+margin:0;
+background:linear-gradient(135deg,#000000,#3a003a);
+font-family:Arial;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+margin-top:120px;
+}
+
+h1{
+font-size:50px;
+color:#ff66cc;
+text-shadow:0 0 20px pink;
+}
+
+p{
+font-size:20px;
+}
+
+.doll{
+margin-top:40px;
+cursor:pointer;
+}
+
+.doll img{
+width:170px;
+border-radius:50%;
+box-shadow:0 0 30px pink;
+transition:0.4s;
+}
+
+.doll:hover img{
+transform:scale(1.1);
+}
+
+.name{
+font-size:22px;
+margin-top:10px;
+color:#ff99cc;
+}
+
+.balloon{
+position:absolute;
+bottom:-100px;
+width:40px;
+height:55px;
+background:red;
+border-radius:50%;
+animation:float 8s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+100%{transform:translateY(-120vh)}
+}
+
+.heart{
+position:absolute;
+color:#ff4da6;
+font-size:24px;
+animation:heartFloat 3s linear forwards;
+}
+
+@keyframes heartFloat{
+0%{
+opacity:1;
+transform:translateY(0);
+}
+100%{
+opacity:0;
+transform:translateY(-200px);
+}
+}
